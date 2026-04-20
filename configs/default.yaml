@@ -1,0 +1,30 @@
+# 1. Cấu hình Dữ liệu (Dataset)
+dataset:
+  data_folder: "data/coco"
+  data_name: "coco_5_cap_per_img_5_min_word_freq"
+
+# 2. Cấu hình Kiến trúc Mô hình (Model)
+model:
+  encode_img_size: 14
+  emb_dim: 512
+  attention_dim: 512
+  decoder_dim: 512
+  dropout: 0.5
+  fine_tune_encoder: False
+
+# 3. Cấu hình Quá trình Huấn luyện (Training)
+training:
+  epochs: 120
+  batch_size: 32
+  workers: 0
+  encoder_lr: 1e-4
+  decoder_lr: 4e-4
+  encode_weight_decay: 5e-5
+  grad_clip: 5.0
+  alpha_c: 1.0
+  print_freq: 100
+
+# 4. Cấu hình Đánh giá & Checkpoint (Evaluation)
+evaluation:
+  top_k: 5
+  checkpoint_path: "weights/no_attention/BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar"

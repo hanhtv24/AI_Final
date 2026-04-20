@@ -1,0 +1,22 @@
+# --- Deep Learning Framework ---
+torch
+torchvision
+
+# --- Xử lý dữ liệu & Tính toán ---
+numpy
+pandas
+h5py          # Bắt buộc để đọc/ghi file CUSTOM_IMAGES.hdf5
+
+# --- Xử lý ảnh & Trích xuất đặc trưng (HOG) ---
+opencv-python
+scikit-image  
+
+# --- Trực quan hóa dữ liệu (Visualize) ---
+matplotlib
+seaborn
+
+# --- Công cụ hỗ trợ ---
+tqdm          # Tạo thanh tiến trình (progress bar) cực đẹp khi train
+jupyterlab    # Để chạy các file .ipynb cho khâu EDA và phân tích
+tensorboard   # Công cụ theo dõi biểu đồ loss/accuracy tự động
+pyyaml
