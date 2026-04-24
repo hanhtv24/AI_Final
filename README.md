@@ -82,7 +82,8 @@ AI_Final/
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb       # Phân tích và trực quan hóa tập dữ liệu
-│   └── 02_model_visualization.ipynb    # Attention Heatmap & bảng tổng kết điểm BLEU
+│   ├── 02_model_visualization.ipynb    # Attention Heatmap & bảng tổng kết điểm BLEU
+│   └── 03_encoder_evaluation.ipynb     # So sánh định lượng HOG vs. ResNet-101 Encoder
 │
 ├── self_collect/                       # Dữ liệu tự thu thập để demo thực tế
 │
@@ -101,8 +102,8 @@ AI_Final/
 │       └── util.py                    # Hàm phụ trợ: tính toán, lưu/nạp checkpoint
 │
 ├── weights/
-│   ├── attention/                      # BEST_checkpoint.pth.tar – mô hình Attention
-│   └── baseline/                       # BEST_checkpoint.pth.tar – mô hình Baseline
+│   ├── attention/                      # BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar
+│   └── no_attention/                   # BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar
 │
 ├── evaluate.py                         # Beam Search + tính BLEU (Attention)
 ├── evaluate_baseline.py                # Beam Search + tính BLEU (Baseline)
@@ -119,7 +120,7 @@ AI_Final/
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/image-captioning.git
+git clone https://github.com/hanhtv24/AI_Final.git
 cd image-captioning
 
 # 2. Tạo môi trường ảo

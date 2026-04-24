@@ -26,5 +26,7 @@ training:
 
 # 4. Cấu hình Đánh giá & Checkpoint (Evaluation)
 evaluation:
+  checkpoint_path: "weights/attentionBEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar"
+  checkpoint_baseline_path: "weights/no_attention/BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar"
+  beam_size: 5
   top_k: 5
-  checkpoint_path: "weights/no_attention/BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar"
