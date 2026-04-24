@@ -42,8 +42,8 @@ Cơ chế **Soft Attention** (Bahdanau, 2015) cho phép decoder "nhìn" vào cá
 Luồng dữ liệu tổng quan
 ═══════════════════════════════════════════════════════════════
 
-  ┌─────────────────┐     data_reader.py      ┌─────────────┐
-  │  MS COCO 2014   │ ──────────────────────► │  HDF5 File  │
+  ┌─────────────────┐     data_reader.py       ┌─────────────┐
+  │  MS COCO 2014   │ ──────────────────────►  │  HDF5 File  │
   │  Images + JSON  │                          │ WORDMAP.json│
   └─────────────────┘                          └──────┬──────┘
                                                       │
@@ -108,8 +108,8 @@ AI_Final/
 │   ├── attention/                      # BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar
 │   └── no_attention/                   # BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar
 │
-├── evaluate.py                         # Beam Search + tính BLEU (Attention)
-├── evaluate_baseline.py                # Beam Search + tính BLEU (Baseline)
+├── evaluate.ipynb                      # Beam Search + tính BLEU (Attention)
+├── evaluate_baseline.ipynb             # Beam Search + tính BLEU (Baseline)
 ├── main.py                             # Điểm vào: khởi chạy toàn bộ quá trình huấn luyện
 ├── requirements.txt                    # Danh sách thư viện phụ thuộc
 └── README.md
@@ -123,8 +123,8 @@ AI_Final/
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/image-captioning.git
-cd image-captioning
+git clone https://github.com/hanhtv24/AI_Final.git
+cd AI_Final
 
 # 2. Tạo môi trường ảo
 python -m venv venv
